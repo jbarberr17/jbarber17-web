@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jbarberr17</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header, footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    section {
+      padding: 2em 1em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    form input,
+    form select,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 0.75em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #666;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 630px;
+      border: none;
+    }
+
+    .instagram {
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    .instagram img {
+      width: 50px;
+    }
+
+    .contact-buttons {
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    .contact-buttons a button {
+      margin: 0.5em;
+      padding: 0.8em 1.2em;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+    }
+
+    .instagram-btn {
+      background-color: #E1306C;
+      color: white;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      nav a {
+        font-size: 0.95em;
+        margin: 0.3em;
+      }
+
+      form input,
+      form select,
+      form textarea,
+      form button {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>jbarberr17</h1>
+    <p>Estilo, confianza y tijeras mágicas ✂️</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Nuestro Equipo</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#reservas">Reservas</a>
+    <a href="#instagram">Instagram</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Corte clásico y moderno</li>
+    </ul>
+  </section>
+
+  <section id="equipo">
+    <h2>Conócenos</h2>
+    <p>Tu imagen habla por ti. Nosotros nos encargamos de que diga lo correcto.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Calla planeta Neptuno, número 5, 28 Campana</p>
+    <p>📞 643 592 341</p>
+    <p>📧 jbarberr17@gmail.com</p>
+  </section>
+
+  <section id="reservas">
+    <h2>Reserva tu cita</h2>
+    <p>Elige el día y la hora que mejor te venga o rellena el formulario para que te contactemos:</p>
+
+    <!-- Calendario interactivo -->
+    <div style="margin-bottom:2em;">
+      <iframe src="https://calendly.com/jbarberr17" frameborder="0"></iframe>
+    </div>
+
+    <!-- Formulario de reserva -->
+    <form action="https://formspree.io/f/xyzdkowe" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+
+      <label for="fecha">Fecha deseada:</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="hora">Hora deseada:</label>
+      <input type="time" id="hora" name="hora">
+
+      <label for="servicio">Servicio:</label>
+      <select id="servicio" name="servicio">
+        <option value="corte">Corte de pelo</option>
+        <option value="barba">Afeitado / Barba</option>
+        <option value="color">Coloración</option>
+        <option value="tratamiento">Tratamiento capilar</option>
+      </select>
+
+      <label for="mensaje">Mensaje adicional:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <button type="submit">Enviar reserva</button>
+    </form>
+
+    <!-- Botones de contacto directo -->
+    <div class="contact-buttons">
+      <a href="https://www.instagram.com/jbarberr17" target="_blank">
+        <button class="instagram-btn">📸 Ver en Instagram</button>
+      </a>
+      <a href="https://wa.me/34643592341" target="_blank">
+        <button class="whatsapp-btn">💬 Escríbenos por WhatsApp</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="instagram" class="instagram">
+    <h2>Instagram</h2>
+    <p>Síguenos para ver nuestros últimos estilos y promociones:</p>
+    <a href="https://www.instagram.com/jbarberr17" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+    <p><a href="https://www.instagram.com/jbarberr17" target="_blank">@jbarberr17</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 jbarberr17. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
